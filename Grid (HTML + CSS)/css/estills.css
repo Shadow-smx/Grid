@@ -1,4 +1,67 @@
-/* Todos los elementos de la pagina */
+/* For devices with a minimum width of 768px (Medium) */
+@media screen and (min-width: 768px) {
+    /* Todos los elementos de la pagina */
+  *{
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+  }
+
+  h1 {
+    color: black;
+  }
+
+  h2 {
+    color: black;
+  }
+
+  p {
+    color: black;
+  }
+
+  ol{
+    color: rgb(0, 0, 0);
+  }
+
+  ul{
+    color: black;
+  }
+
+  /* Todos los enlaces la pagina */
+  a {
+      color: rgb(0, 0, 0); /* NOrmal color of the link */
+  }
+
+  a:hover {
+      color: rgb(255, 0, 0); /* Color when the mouse hovers over the link */
+  }
+
+  a.active {
+      color: rgb(255, 0, 0); /* Color when the link is clicked */
+  }
+
+
+  .parent {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 8px;
+  }
+      
+  .div1 {
+      grid-column: span 3 / span 3;
+      grid-row: span 5 / span 5;
+  }
+
+  .div2 {
+      grid-column: span 2 / span 2;
+      grid-row: span 5 / span 5;
+      grid-column-start: 4;
+  }
+}
+
+/* For devices with a minimum width of 992px (Large) */
+@media screen and (min-width: 992px) {
+  /* Todos los elementos de la pagina */
 *{
   font-family: "Times New Roman", Times, serif;
   font-weight: bold;
@@ -7,6 +70,10 @@
 h1 {
    color: black;
  }
+
+ h2 {
+    color: black;
+  }
 
 p {
    color: black;
@@ -51,4 +118,4 @@ a.active {
     grid-row: span 5 / span 5;
     grid-column-start: 4;
 }
-        
+}
